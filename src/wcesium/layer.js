@@ -2,13 +2,12 @@
  * @Author: wangchaoxu
  * @Date: 2020-07-16 16:47:59
  * @LastEditors: wangchaoxu
- * @LastEditTime: 2020-09-23 18:02:20
- * @Description:
+ * @LastEditTime: 2020-09-24 10:09:56
+ * @Description:图层添加
  */
 //需要安装@dvgis/cesium-map,然后在mian.js中引入 import('@dvgis/cesium-map/build/cesium-map/cesium-map.min');
 import config from './config';
 import { for2 } from './core';
-
 import { TdtImageryProvider } from 'w-cesium-basemap';
 /**
  * @description: 添加图层

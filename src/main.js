@@ -2,8 +2,8 @@
  * @Author: wangchaoxu
  * @Date: 2020-05-12 17:17:38
  * @LastEditors: wangchaoxu
- * @LastEditTime: 2020-09-23 18:04:24
- * @Description:
+ * @LastEditTime: 2020-09-24 10:09:13
+ * @Description:入口文件
  */
 import Vue from 'vue';
 import router from '@/router';
