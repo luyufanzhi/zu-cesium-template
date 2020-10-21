@@ -1,10 +1,10 @@
-# vue-cesium-template
+# vueCesiumTemplate
 
-> vue-cesium-template 的结合模版,使用 vue-cli4.X,和 Cesium1.7;viewer 和 Cesium 设为全局,操作方便,在 vue 中不会造成内存溢出,正常运行`60FPS`
+> vue cesium 的结合模版,使用 vue-cli4.X,和 Cesium1.7;viewer 和 Cesium 设为全局,操作方便,在 vue 中不会造成内存溢出,正常运行`60FPS`
 
 ## 演示
 
-[演示](http://wangyoujin.gitee.io/vue-cesium-template/#/)
+[演示](http://wangyoujin.gitee.io/vueCesiumTemplate/#/)
 
 ## 安装
 
@@ -32,17 +32,17 @@
 
 ## 使用插件
 
-|       技术        |         介绍          |
-| :---------------: | :-------------------: |
-|     vueRouter     |         路由          |
-|       vuex        |       状态管理        |
-|    elemmentUI     |        UI 框架        |
-|       less        |       预处理器        |
-|     prettier      |      格式化代码       |
-|      eslint       |     检测代码质量      |
-|       axios       |       ajax 请求       |
-|      Cesium       |     三维 GIS 框架     |
-| @dvgis/cesium-map | Cesium 加载地图的插件 |
+|       技术       |         介绍          |
+| :--------------: | :-------------------: |
+|    vueRouter     |         路由          |
+|       vuex       |       状态管理        |
+|    elemmentUI    |        UI 框架        |
+|       less       |       预处理器        |
+|     prettier     |      格式化代码       |
+|      eslint      |     检测代码质量      |
+|      axios       |       ajax 请求       |
+|      Cesium      |     三维 GIS 框架     |
+| w-cesium-basemap | Cesium 加载底图的插件 |
 
 ## 项目结构
 
@@ -106,37 +106,9 @@ var options = {
   // 用于启用或禁用距离图例。true是启用，false是禁用。默认值为true。如果将选项设置为false，距离图例将不会添加到地图中。
   enableDistanceLegend: true,
   // 用于启用或禁用指南针外环。true是启用，false是禁用。默认值为true。如果将选项设置为false，则该环将可见但无效。
-  enableCompassOuterRing: true
+  enableCompassOuterRing: true,
 };
 CesiumNavigation(viewer, options);
-```
-
-### cesium-map
-
-- 安装插件`yarn add @dvgis/cesium-map`
-- 引入 `import('@dvgis/cesium-map/build/cesium-map/cesium-map.min')`
-- 使用
-
-```js
-// 卫星影像底图
-let imgLayer = {
-  style: 'img',
-  name: '图层',
-  key: config.TIANDITU_KAY
-};
-viewer.imageryLayers.addImageryProvider(new Cesium.TdtImageryProvider(imgLayer));
-// 标注
-let ciaLayer = {
-  style: 'cia',
-  key: config.TIANDITU_KAY
-};
-viewer.imageryLayers.addImageryProvider(new Cesium.TdtImageryProvider(ciaLayer));
-// 国界
-let iboLayer = {
-  style: 'ibo',
-  key: config.TIANDITU_KAY
-};
-viewer.imageryLayers.addImageryProvider(new Cesium.TdtImageryProvider(iboLayer));
 ```
 
 [回到顶部](#vue-cesium)
