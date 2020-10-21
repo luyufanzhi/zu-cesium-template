@@ -1,4 +1,4 @@
-# vueCesiumTemplate
+# v-cesium-template
 
 > vue cesium 的结合模版,使用 vue-cli4.X,和 Cesium1.7;viewer 和 Cesium 设为全局,操作方便,在 vue 中不会造成内存溢出,正常运行`60FPS`
 
@@ -106,7 +106,7 @@ var options = {
   // 用于启用或禁用距离图例。true是启用，false是禁用。默认值为true。如果将选项设置为false，距离图例将不会添加到地图中。
   enableDistanceLegend: true,
   // 用于启用或禁用指南针外环。true是启用，false是禁用。默认值为true。如果将选项设置为false，则该环将可见但无效。
-  enableCompassOuterRing: true,
+  enableCompassOuterRing: true
 };
 CesiumNavigation(viewer, options);
 ```
